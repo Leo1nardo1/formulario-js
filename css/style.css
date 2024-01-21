@@ -1,0 +1,48 @@
+*{
+    font-family: Helvetica;
+    /* Para que os inputs e labels fiquem limitados a largura do elemento pai*/
+    box-sizing: border-box;
+    
+}
+body{
+    /* Adiciona um padding dentro do body de 16px*/
+    padding: 16px;
+}
+h1{
+    /*Alinha o h1 no meio da tela*/
+    text-align: center;
+}
+form{
+    /*Alinha os itens na horizontal*/
+    display: flex;
+    /*Alinha os itens na vertical*/
+    flex-direction: column;
+    /*Adiciona um espaço entre os elementos*/
+    gap: .5rem;
+    /*Largura do container*/
+    width: 500px;
+    /*Centraliza os elementos dentro do container*/
+    margin: 0 auto;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    /*Pra garantir que eles preencham a largura disponível*/
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer ;
+}
